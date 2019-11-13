@@ -7,7 +7,7 @@ const mongoose   = require('mongoose')
 const flash      = require('connect-flash')
 const session    = require('express-session')
 
-
+console.log(process.env.DATABASEURL)
 //Database
 mongoose.connect(process.env.DATABASEURL,{ useNewUrlParser: true , useUnifiedTopology: true})
 
