@@ -1,0 +1,42 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="/" class="navbar-brand">Glozzom</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item <%= pageTitle === 'Home'?'active':''%>">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item <%= pageTitle === 'About'?'active':''%>">
+            <a href="/about" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item <%= pageTitle === 'Services'?'active':''%>">
+            <a href="/services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item <%= pageTitle === 'Blog'?'active':''%>">
+            <a href="/blog" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item <%= pageTitle === 'Contact'?'active':''%>">
+            <a href="/contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Flash Message -->
+<!-- 
+  <div class="container">
+      <%if(success && success.length>0){%>
+      <div id="flash" class="alert alert-success" role="alert">
+        <%=success%>
+      </div>
+      <%}%>
+      <%if(error && error.length>0){%>
+      <div id="flash" class="alert alert-danger" role="alert">
+        <%=error%>
+      </div>
+      <%}%> -->

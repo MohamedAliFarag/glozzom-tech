@@ -1,0 +1,112 @@
+<%-include('../includes/header.ejs')%>
+</head>
+<body>
+    <!-- Navbar -->
+    <%-include('../includes/navbar.ejs')%>
+    <!--About Header-->
+
+<header id="page-header" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-auto text-center">
+                    <h1>Contact Us</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, non!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!--Contact Form-->
+    <section id="contact-form" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h4>Get In Touch</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, explicaboLOL.</p>
+                            <h4>Address</h4>
+                            <p>40 District One Nasr City</p>
+                            <h4>Email</h4>
+                            <p>info@glozzom.com</p>
+                            <h4>Phone</h4>
+                            <p>011 xxxxxxxx</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card p-4">
+                        <div class="card-body text-center">
+                            <h3>Please fill out this form to contact us</h3>
+                            <hr>
+                            
+                                    <div>
+                                            <%if(success && success.length>0){%>
+                                            <div id="flash" class="alert alert-success" role="alert">
+                                              <%=success%>
+                                            </div>
+                                            <%}%>
+                                            <%if(error && error.length>0){%>
+                                            <div id="flash" class="alert alert-warning" role="alert">
+                                              <%=error%>
+                                            </div>
+                                            <%}%>
+                                        </div>
+                            <form action="/contact" method="post" novalidate>
+                                    <div class="row">    
+                                      <div class="col">
+                                        <input type="text" class="form-control mb-2" placeholder="First name" name="firstName" value="<%=oldInput.firstName%>">
+                                        <input type="email" class="form-control mb-2" placeholder="Email" name="email" value="<%=oldInput.email%>">
+                                      </div>
+                                      <div class="col">
+                                        <input type="text" class="form-control mb-2" placeholder="Last Name" name="lastName" value="<%=oldInput.lastName%>">
+                                        <input type="number" class="form-control mb-2" placeholder="Phone Number" name="phoneNumber" value="<%=oldInput.phoneNumber%>">
+                                      </div>    
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                                <div class="form-group mb-3">
+                                                        <textarea class="form-control mb-3" rows="3" placeholder="Message" name="message"><%=oldInput.message%></textarea>
+                                                        <button class="btn btn-success btn-block">Send</button>
+                                                  </div>
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Staff Section-->
+    <section id="staff" class="py-4 bg-dark">
+        <div class="container text-center text-white">
+            <h2>Our Staff</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="img/person1.jpg" class="img-fluid rounded-circle mb-2">
+                    <h4>Sama Ali</h4>
+                    <small>Markting Manager</small>
+                </div>
+                <div class="col-md-3">
+                        <img src="img/person2.jpg" class="img-fluid rounded-circle mb-2">
+                        <h4>Yara Ali</h4>
+                    <small>Markting Manager</small>
+                </div>
+                <div class="col-md-3">
+                        <img src="img/person3.jpg" class="img-fluid rounded-circle mb-2">
+                        <h4>Mohamed Ali</h4>
+                    <small>CEO</small>
+                </div>
+                <div class="col-md-3">
+                        <img src="img/person4.jpg" class="img-fluid rounded-circle mb-2">
+                        <h4>Ahmed Ali</h4>
+                    <small>Markting Manager</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<%-include('../includes/footer.ejs')%>
