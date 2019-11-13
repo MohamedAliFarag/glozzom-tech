@@ -1,3 +1,5 @@
+//dotenv
+require('dotenv').config()
 //models
 const Contact = require('../models/contact')
 const Newsletter = require('../models/newsLetter')
