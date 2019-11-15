@@ -1,5 +1,6 @@
 # Glozzom-tech
 Experimental site on using nodejs &amp; express &amp; mongodb &amp; mongoose
+https://glozzomtech.herokuapp.com/
 * it's have two forms newsletter and contact form
 
 ## NewsLetter form
