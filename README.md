@@ -9,7 +9,7 @@ Experimental site on using nodejs &amp; express &amp; mongodb &amp; mongoose
 * saintaize the inputs using (express-validator)
 * if not found send an email to user (using mailgun service)
 
-## Contact
+## Contact form
 * save the contact info to DB
 * saintaize the inputs using (express-validator)
 * send email to user email (using mailgun service)
